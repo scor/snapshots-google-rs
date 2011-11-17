@@ -8,6 +8,6 @@ ensure that Google keep supporting existing markup.
 
 Each snapshot includes:
 
-* The original HTML document (person.html)
-* An HTML snapshot of Google Rich Snippets Testing Tool results (person.grstt.html)
-* A screenshot of the Google Rich Snippets Testing Tool results (person.grstt.png)
+* The original HTML document (`person.html`)
+* An HTML snapshot of Google Rich Snippets Testing Tool results (`person.grstt.html`)
+* A screenshot of the Google Rich Snippets Testing Tool results (`person.grstt.png`)
