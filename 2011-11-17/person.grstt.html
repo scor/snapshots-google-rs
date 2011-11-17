@@ -1,0 +1,213 @@
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="icon" href="http://www.google.com/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.google.com/favicon.ico" type="image/x-icon" />
+<title>Webmaster Tools - Rich Snippets Testing Tool</title>
+<script>
+var JSMSG = {
+"Button" : {
+"save" : "Save",
+"saving" : "Saving",
+"save_changes" : "Save Changes",
+"add" : "Add",
+"adding" : "Adding"
+},
+"Error" : {
+"add_failed" : "Add failed",
+"delete_failed" : "Delete failed",
+"save_failed" : "Save failed",
+"no_name_error" : "You must enter a name.",
+"no_description_error" : "You must enter a description.",
+"too_many_refinements" : "You cannot create any more refinements",
+"empty_refinement" : "You must enter a refinement name",
+"add_refinement_failed" : "Failed to add refinement",
+"delete_refinement_failed" : "Failed to delete refinement",
+"edit_refinement_failed" : "Failed to edit refinement",
+"loading_sites_failed" : "Loading sites failed",
+"add_sites_failed" : "Adding sites failed",
+"url_error_empty" : "You must enter a URL.",
+"url_error_feed_with_asterisk" : "Invalid URL. The * character is not allowed in URLs for dynamic link extraction.",
+"label_failed" : "Labeling failed"
+}
+};
+</script>
+<script src="/coop/intl/en-US/jst.js?v=1321237619"></script>
+<script src="/coop/intl/en-US/cpanel.js?v=1321237619"></script>
+<script src="/coop/intl/en-US/locale.js?v=1321237619"></script>
+<script>
+</script>
+<script type="text/javascript">
+</script>
+<script type="text/javascript">
+function OnLoad() {
+}
+</script>
+<link rel="canonical" href="http://www.google.com/webmasters/tools/richsnippets"/>
+<link rel='stylesheet' type='text/css' href="/coop/style/rich_snippets.css"/>
+<script>
+function ShowOrHideAuthorInfobox(id) {
+// Simple function to show/hide a corresponding info box
+// for unverified author links.
+var box = document.getElementById(id);
+if (box.style.display == "none") {
+box.style.display = "block";
+} else {
+box.style.display = "none";
+}
+}
+</script>
+</head>
+<body onload="OnLoad()">
+<div class="g-doc">
+<div id="header">
+<div id="account-info">
+<a href="http://www.google.com/support/webmasters/?hl=en" target="google_popup">Help</a>
+</div>
+</div>
+<table id="header-combo">
+<tr><td id="logo">
+<a href="http://www.google.com/webmasters/tools/home?hl=en"><img src="https://www.google.com/webmasters/tools/images/logos/webmaster_tools_logo_sm.gif" alt="Back to Home" height="30" /></a></td>
+<td class="center"></td>
+<td class="right">&nbsp;</td></tr>
+</table>
+<div id="app-body" class="g-section g-tpl-180">
+<div class="g-unit g-first side-bar">
+<div id="sidebar">
+<ul id="menu">
+<li class="item selected"><a href="http://www.google.com/webmasters/tools/richsnippets" class="label">Rich Snippets</a></li>
+</ul>
+<div id="suggestedlinks"><div class="header">Help with:</div>
+<a href="http://www.google.com/support/webmasters/bin/topic.py?hl=en&amp;topic=21997" target="google_popup">Documentation</a>
+<a href="http://www.google.com/support/webmasters/bin/answer.py?answer=1093493" target="google_popup">Troubleshooting Help</a>
+</div>
+</div>
+</div>
+<div class="g-unit">
+<div id="main-content"><h2>Rich Snippets Testing Tool <sup><span id="beta">Beta</span></sup></h2>
+<div id="home">
+<div id="message-center-mini" class="g-section">
+<div id="content">
+<table>
+<td width="900">
+<div id="intro">
+Use the Rich Snippets Testing Tool to check that Google can correctly
+parse your structured data markup and display it in search results.
+</div>
+<div class="mc-header g-section g-tpl-50-50">
+<span id="title" class="g-unit g-first">Test your website</span>
+</div>
+<p>Enter a web page URL to see how it may appear in search results:</p>
+<form id="search_box">
+<table cellpadding="2">
+<tr>
+<td valign="top">
+<input type="text" name="url" size="60" value="http://files.openspring.net/snapshots-google-rs/2011-11-17/person.html" />
+<input type="hidden" name="view"
+                     value="" />
+<input type="submit" value="Preview" />
+</td>
+</tr>
+<tr>
+<td>
+Examples: <a href="http://www.google.com/webmasters/tools/richsnippets?url=https%3A%2F%2Fmarket.android.com%2Fdetails%3Fid%3Dcom.zeptolab.ctr.paid%26hl%3Den">Applications</a>,
+<a href="?url=http%3A%2F%2Fwww.mattcutts.com%2Fblog%2Fthoughts-on-google-instant%2F">Authors</a>,
+<a href="http://www.google.com/webmasters/tools/richsnippets?url=http%3A%2F%2Feventful.com%2Fsanfrancisco%2Fevents">Events</a>,
+<a href="http://www.google.com/webmasters/tools/richsnippets?url=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt1375666%2F">Movie</a>,
+<a href="http://www.google.com/webmasters/tools/richsnippets?url=http%3A%2F%2Fwww.myspace.com%2Fladygaga">Music</a>,
+<a href="http://www.google.com/webmasters/tools/richsnippets?url=www.linkedin.com%2Fpub%2Fpravir-gupta%2F2%2F180%2Fa70">People</a>,
+<a href="http://www.google.com/webmasters/tools/richsnippets?url=http%3A%2F%2Fwww.shopping.hp.com%2Fproduct%2Fprinter%2Finkjet%2F1%2Fstorefronts%2FC9295A%252523B1H">Products</a>,
+<a href="http://www.google.com/webmasters/tools/richsnippets?url=http%3A%2F%2Fwww.ebay.com%2Fctg%2FLogitech-Revue-%2F97019743">Products with many offers</a>,
+<a href="http://www.google.com/webmasters/tools/richsnippets?url=http%3A%2F%2Fallrecipes.com%2Frecipe%2Fbanana-banana-bread%2F">Recipes</a>,
+<a href="http://www.google.com/webmasters/tools/richsnippets?url=http%3A%2F%2Fwww.urbanspoon.com%2Fr%2F23%2F1600592%2Frestaurant%2FPoint-Breeze%2FAlma-Pan-Latin-Kitchen-Pittsburgh">Reviews</a>,
+<a href="http://www.google.com/webmasters/tools/richsnippets?url=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0813715%2F">TV Series</a>
+</td>
+</tr>
+</table>
+</form>
+<div class="mc-header g-section g-tpl-50-50">
+<span id="title" class="g-unit g-first">Google search preview</span>
+</div>
+<div id="richsnippets-result" style="max-width: 600px">
+<h3 class="r"><a class="fakelink">Bob Smith</a></h3>
+<div class="s">
+<table class="ts">
+<tr>
+<td valign="top">
+<div class="left-image">
+<a class="fakelink">
+<img src="http://lh5.googleusercontent.com/public/TPsGZTCqK8dOjQ2MNEDmCbxfSWhrZOw44AXjJv1Cc2NHWx8IwEawjZ5I-LCA0U_qIzPChAGIiO_UlViLFd5OfZMdpuKAyx9L-DIABXBC1y38ZAR7HiwJSQ6_4kfVIOqvt2hdHhBei4MvyQyiYBLc4n2MRsx2GsZkkALbiO2F9jj6_S2aWMz9LTztfFnglgjUAaQ" alt="" align="middle" border="1" height="60" width="60" />
+</a>
+</div>
+</td>
+<td valign="top">
+<div class="f">
+<cite>files.openspring.net/snapshots-google-rs/2011-11-17/person.html</cite>
+<span class="gl">
+- <a class="fakelink">Cached</a>
+</span>
+</div>
+<div class="f">engineer&nbsp;-&nbsp;ACME Corp<br></div>
+The excerpt from the page will show up here. The reason we can't show text from your webpage is because the text depends on the query the user types.<br/>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<p>Note that there is no guarantee that a Rich Snippet will be shown for this page on actual search results. For more details, see the <a href="http://knol.google.com/k/google-rich-snippets/google-rich-snippets/32la2chf8l79m/1#Frequently_Asked_Questions" target="google_popup">FAQ</a>.</p>
+<div class="mc-header g-section g-tpl-50-50">
+<span id="title" class="g-unit g-first">Extracted Author/Publisher for this page</span>
+</div>
+<div id="authorship-data" style="padding: 0.5em">
+<div class="indent" style="margin-left: 15px">
+Page does not contain authorship information (<a href="http://www.google.com/support/webmasters/bin/answer.py?answer=1229920">learn more</a>)
+</div>
+</div>
+<div class="mc-header g-section g-tpl-50-50">
+<span id="title" class="g-unit g-first">Extracted rich snippet data from the page</span>
+</div>
+<div id="richsnippets-data">
+<div class="extracted-annotation">
+Person<br/>
+<div class="indent">
+image =
+http://openspring.net/sites/openspring.net/files/styles/photo/public/DSCF0493_2_200.jpg<br />
+url =
+<div class="indent">
+value = www.example.com<br/>
+href = http://www.example.com/<br />
+</div>
+name =
+Bob Smith<br/>
+jobTitle =
+engineer<br/>
+affiliation =
+ACME Corp<br/>
+</div>
+</div>
+</div>
+View rich snippets data as visible by a Custom Search Engine.
+<a href="http://www.google.com/webmasters/tools/richsnippets?url=http%3A%2F%2Ffiles.openspring.net%2Fsnapshots-google-rs%2F2011-11-17%2Fperson.html&amp;view=cse">Show &raquo;</a><br/>
+</td>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<span class="legal" dir="ltr">&copy; 2010 Google Inc.</span>
+-
+<a href="http://www.google.com/webmasters" target="google_popup">Webmaster Central</a>
+-
+<a href="http://www.google.com/accounts/TOS?loc=us&amp;hl=en" target="google_popup">Terms of Service</a>
+-
+<a href="http://www.google.com/privacy.html" target="google_popup">Privacy Policy</a>
+-
+<a href="http://www.google.com/support/webmasters/bin/answer.py?answer=113808&amp;hl=en" target="google_popup">Webmaster Tools Help</a>
+</div>
+</div>
+</body>
+</html>

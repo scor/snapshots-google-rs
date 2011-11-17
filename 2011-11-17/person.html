@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bob Smith</title>
+  <base href="http://example.org/"/>
+</head>
+<body>
+<!-- This document tests the schema:Person type and more specifically 
+     the schema:image and schema:jobTitle properties. -->
+<div xmlns:schema="http://schema.org/" typeof="schema:Person">
+  My name is <span property="schema:name">Bob Smith</span>
+
+  <!-- Test schema:image defined for http://schema.org/Person. -->
+  <div rel="schema:image" resource="http://openspring.net/sites/openspring.net/files/styles/photo/public/DSCF0493_2_200.jpg" class="field-item even"><a href="/blog/2011/08/22/definitive-guide-to-drupal-7-semantic-web-security"><img alt="" src="http://openspring.net/sites/openspring.net/files/styles/photo/public/DSCF0493_2_200.jpg" typeof="foaf:Image"></a></div>
+
+  Here is my homepage:
+  <a href="http://www.example.com" rel="schema:url">www.example.com</a>.
+
+  <!-- Test schema:jobTitle defined for http://schema.org/Person. -->
+  and work as an <span property="schema:jobTitle">engineer</span>
+  at <span property="schema:affiliation">ACME Corp</span>.
+</div>
+</body>
+</html>
